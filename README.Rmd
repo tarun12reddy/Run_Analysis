@@ -1,0 +1,17 @@
+Title
+========================================================
+
+Path of current directory
+Download the zip file from HTTP server as zip file
+Unzip the zip file and save it in current directory
+Reading data from within the directory
+Reading data from the test directory
+Reading data from the train directory
+Moving to current directory because the R script is in current directory
+Problem 1: Combining train and test data bases
+Problem2: Extracting only the mean and std columns
+- checking for mean() and std() in names of the columnns of test and train
+Problem3: Attaching a column with the acitivity labels to the above data
+Problem4: Calculating the average for each of the labels for each of the subject
+- Used tapply and factor for activity labels with function mean
+Gives the output of average matrix along with row names and column names in seperate text files
