@@ -65,7 +65,8 @@ final.subjects <- as.character(matrix(nrow = 79, ncol=1))
 for (i in 1: 79){
 final.subjects[i] <- names(totaldata_mean_std)[i]
 }
+#Gives the output of average matrix along with row names and column names
+rownames(final.output) <- final.subjects
+colnames(final.output) <- final.labels
 #Gives the output of average matrix along with row names and column names in seperate text files
 write.table(final.output, "~/Desktop/Dropbox/Coursera/Data Science Specialization/Course 3 - Getting and Cleaning Data/final.output.txt", sep="\t")
-write.table(final.subjects, "~/Desktop/Dropbox/Coursera/Data Science Specialization/Course 3 - Getting and Cleaning Data/final.subjects.txt", sep="\t")
-write.table(final.labels, "~/Desktop/Dropbox/Coursera/Data Science Specialization/Course 3 - Getting and Cleaning Data/final.labels.txt", sep="\t")
